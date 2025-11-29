@@ -1,0 +1,103 @@
+  @keyframes Entrada {
+    0%{
+        opacity: 0%;
+        margin-top: 100%;
+    }
+    100%{
+        opacity: 100%;
+        margin-top: 0%;
+    }
+  }
+
+  .dark body{ background:#0e0e0e; color:white; }
+  .dark textarea{ background:#1a1a1a; color:#f1f1f1; border:1px solid #333;  transition: 500ms; }
+  .dark .topbar{ background:#1a1a1a; box-shadow:0 2px 6px rgba(255,255,255,0.1); transition: 500ms; }
+  .themeBtn{ padding:8px 14px; border:none; background:#222; color:white; border-radius:6px; cursor:pointer;  transition: 500ms; }
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      animation: alternate 2s Entrada;
+      margin: 0;
+      padding: 0;
+      background: #eef1f5;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    .topbar {
+      width: 100%;
+      background: #ffffff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    button {
+      padding: 8px 14px;
+      border: none;
+      background: #4a66ff;
+      color: white;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.7s;
+      width: 120px;
+      height: 40px;
+    }
+
+    button:hover {
+      background: #636363;
+      width: 130px;
+      height: 50px;
+      transform: rotate(10deg);
+      border-radius: 20px;
+    }
+
+    .container {
+      display: flex;
+      height: calc(100vh - 60px);
+      gap: 10px;
+      padding: 10px;
+    }
+
+    textarea {
+      width: 50%;
+      height: 95%;
+      resize: none;
+      font-size: 15px;
+      padding: 12px;
+      border-radius: 8px;
+      background: #ffffff;
+      border: 1px solid #c5c5c5;
+      outline: none;
+      font-family: monospace;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      opacity: 50%;
+      transition: 500ms;
+    }
+
+    textarea:hover {
+        opacity: 100%;
+        border-radius: 0px;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2)
+    }
+
+    iframe {
+      width: 50%;
+      height: 95%;
+      background: white;
+      border-radius: 8px;
+      border: 1px solid #c5c5c5;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: 500ms;
+    }
+
+    iframe:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
