@@ -1,34 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>InfinityCode</title>
+	<title>InfinityCode</title>
+  <meta name="InfinityCode" content="Faça seu código HTML!">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <link rel="shortcut icon" href="code_blocks_71dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" type="image/x-icon">
-</head>
+  <link rel="shortcut icon" href="./code_blocks_71dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" type="image/x-icon">
+<head>
 <body>
-
-<div class="topbar">
-  <img src="code_blocks_71dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" alt="Logo" class="logo" style="display: flex;">
-  <button class="themeBtn" onclick="toggleTheme()">🌙 Tema</button>
-  
-  <button onclick="saveHtml()" style="background:#28a745;">Salvar HTML</button>
-  <button onclick="loadHtml()" style="background:#ff9800;">Carregar HTML</button>
-</div>
-
-<div class="container">
-  <textarea id="code" oninput="autoRun()">
+  <form>
+		<textarea name="code" cols=70 rows=20 >
 <html>
 <body>
-  <h1>Escreva seu código HTML aqui...</h1>
+    <h1>Hello, World!</h1>
 </body>
-</html>
-  </textarea>
-
-  <iframe id="preview"></iframe>
-</div>
-  <h1 style="margin: 12px; margin-top: -46px; justify-self: center">InfinityCode</h1>
+</html></textarea>
+    	<input id="Executar" type="button" value="Executar" onclick="document.write(code.value);">
+  </form>
 </body>
 </html>
